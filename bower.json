@@ -1,0 +1,25 @@
+{
+  "name": "ib-submit",
+  "version": "1.0.0",
+  "authors": [
+    "Igor Borovica <borovica.igor@gmail.com>"
+  ],
+  "description": "Simple directive which prevents users from repeatedly clicking a button.",
+  "main": "ib-submit.js",
+  "keywords": [
+    "submit",
+    "angular",
+    "form",
+    "repeatedly",
+    "clicking",
+    "prevents"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

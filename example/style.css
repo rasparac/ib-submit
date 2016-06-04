@@ -1,0 +1,7 @@
+.form-row {
+	margin-top: 100px;
+}
+
+.ng-dirty.ng-invalid {
+	border-color: red;
+}
