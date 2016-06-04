@@ -5,7 +5,9 @@ Simple angular directive which prevents users from repeatedly clicking a button.
 * Using bower and running `bower install ib-submit`
 
 #How to add to the project
-angular.module('app', ['ib-submit']);
+````javascript
+	angular.module('app', ['ib-submit']);
+````
 
 #Code example
 Your function must return promise!
