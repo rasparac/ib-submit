@@ -12,13 +12,14 @@ function ExampleController($scope, $http, $q) {
     $scope.sendData = function() {
         console.log("Controller: ExampleController. Method: sendData()");
         return sendData($scope.formData).then(function(res) {
+            console.log(res);
             $scope.formData = {};
         });
     }
 
     function sendData(data) {
         var deferred = $q.defer();
-        deferred.resolve($scope.formData);
+        deferred.resolve(data);
         return deferred.promise; 
     }
 }
