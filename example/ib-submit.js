@@ -35,7 +35,7 @@ function ibSubmit() {
 
             action.finally(function() {
                 button.innerHTML = mainText;
-                button.setAttribute('disabled', false);
+                button.removeAttribute("disabled");
             });
         });
 
