@@ -20,6 +20,7 @@ function ibSubmit() {
         if (!button) {
             throw new Error('Put the <button></button> element inside the form.');
         }
+
         var mainText = button.innerHTML;
         elem.on("submit", function(event) {
             event.preventDefault();
