@@ -4,22 +4,23 @@ angular
     .module('example', ['ib-submit'])
     .controller('ExampleController', ExampleController);
 
-ExampleController.$inject = ['$scope', '$http', '$q'];
+ExampleController.$inject = ['$scope', '$q'];
 
-function ExampleController($scope, $http, $q) {
+function ExampleController($scope, $q) {
     $scope.formData = {};
 
     $scope.sendData = function() {
         console.log("Controller: ExampleController. Method: sendData()");
         return sendData($scope.formData).then(function(res) {
             console.log(res);
-            $scope.formData = {};
-        });
+        })
     }
 
     function sendData(data) {
         var deferred = $q.defer();
-        deferred.resolve(data);
+        setTimeout(function() {
+                deferred.resolve(data);
+            }, 1000)
         return deferred.promise; 
     }
 }

@@ -32,11 +32,10 @@ Your function must return promise!
 ````
 ##HTML
 ````html
-	<form
-		name="myForm"
-		role="form"
+	<button
 		ib-submit
-		after-submit-text="'Save!!!'"
-		submit-action="sendData()">
-    </form>
+		after-submit-text="Button Text"
+		submit-action="sendData()"
+    >Submit
+    </button>
 ````
